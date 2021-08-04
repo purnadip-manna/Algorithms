@@ -8,8 +8,8 @@ void swap(int *arr, int i, int j){
 }
 
 int partition(int *arr, int start, int end){
-    int pIndex = 0, i, pivot = arr[end];
-    for (i = 0; i < end; i++)
+    int pIndex = start, i, pivot = arr[end];
+    for (i = start; i < end; i++)
     {
         if (arr[i]<=pivot)
         {
